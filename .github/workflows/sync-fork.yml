@@ -14,6 +14,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Git Action User
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
       - name: Sync upstream
         run: |
           git remote add upstream https://github.com/openclaw/openclaw.git
