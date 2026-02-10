@@ -26,5 +26,5 @@ jobs:
 
       - name: Push 
         run: |
-          git rebase upstream/main --allow-unrelated-histories
+          git rebase upstream/main
           git push origin main
